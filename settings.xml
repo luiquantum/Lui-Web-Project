@@ -2,35 +2,35 @@
 
 
     <servers>
-    <server>
-        <id>devopsluighi-Lui-Devops-cicd</id>
-        <username>aws</username>
-        <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
-    </server>
+        <server>
+            <id>devopsluighi-Lui-Devops-cicd</id>
+            <username>aws</username>
+            <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+        </server>
     </servers>
 
     <profiles>
-    <profile>
-        <id>devopsluighi-Lui-Devops-cicd</id>
-        <activation>
-        <activeByDefault>true</activeByDefault>
-        </activation>
-        <repositories>
-        <repository>
+        <profile>
             <id>devopsluighi-Lui-Devops-cicd</id>
-            <url>https://devopsluighi-416761465675.d.codeartifact.us-east-1.amazonaws.com/maven/Lui-Devops-cicd/</url>
-        </repository>
-        </repositories>
-    </profile>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>devopsluighi-Lui-Devops-cicd</id>
+                    <url>https://devopsluighi-416761465675.d.codeartifact.us-east-1.amazonaws.com/maven/Lui-Devops-cicd/</url>
+                </repository>
+            </repositories>
+        </profile>
     </profiles>
 
     <mirrors>
-    <mirror>
-        <id>devopsluighi-Lui-Devops-cicd</id>
-        <name>devopsluighi-Lui-Devops-cicd</name>
-        <url>https://devopsluighi-416761465675.d.codeartifact.us-east-1.amazonaws.com/maven/Lui-Devops-cicd/</url>
-        <mirrorOf>*</mirrorOf>
-    </mirror>
+        <mirror>
+            <id>devopsluighi-Lui-Devops-cicd</id>
+            <name>devopsluighi-Lui-Devops-cicd</name>
+            <url>https://devopsluighi-416761465675.d.codeartifact.us-east-1.amazonaws.com/maven/Lui-Devops-cicd/</url>
+            <mirrorOf>*</mirrorOf>
+        </mirror>
     </mirrors>
 
 
