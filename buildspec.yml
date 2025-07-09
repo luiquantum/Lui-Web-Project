@@ -8,6 +8,7 @@ phases:
     commands:
       - echo Initializing environment
       - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain devopsluighi --domain-owner 416761465675 --region us-east-1 --query authorizationToken --output text`
+
   build:
     commands:
       - echo Build started on `date`
@@ -19,4 +20,7 @@ phases:
 artifacts:
   files:
     - target/nextwork-web-project.war
+    - appspec.yml
+    - scripts/**/*
   discard-paths: no
+
